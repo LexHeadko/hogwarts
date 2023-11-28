@@ -1,10 +1,11 @@
 public class Gryffindor extends Hogwarts {
-    Student student;
-    int nobility;
-    int honor;
-    int bravery;
+    private Student student;
+    private int nobility;
+    private int honor;
+    private int bravery;
 
-    public Gryffindor(Student student, int magicPower, int transgression, int nobility, int honor, int bravery) {
+    public Gryffindor(Student student, int magicPower, int transgression,
+                      int nobility, int honor, int bravery) {
         super(magicPower, transgression);
         this.student = student;
         this.nobility = nobility;
