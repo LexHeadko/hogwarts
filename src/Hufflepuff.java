@@ -1,15 +1,19 @@
 public class Hufflepuff extends Hogwarts {
-    private Student student;
     private int diligence;
     private int loyalty;
     private int honesty;
 
-    public Hufflepuff(Student student, int powerMagic, int transgression,
+    public Hufflepuff(String fullName, int powerMagic, int transgression,
                       int diligence, int loyalty, int honesty) {
-        super(powerMagic, transgression);
-        this.student = student;
+        super(fullName, powerMagic, transgression);
         this.diligence = diligence;
         this.loyalty = loyalty;
         this.honesty = honesty;
+    }
+    @Override
+    public String toString() {
+        return super.toString() + "Факультет: Пуфендуй - трудолюбие = " + diligence +
+                ", верность = " + loyalty +
+                ", честность = " + honesty;
     }
 }
